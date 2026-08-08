@@ -1,6 +1,9 @@
-const express = require('express');
-const cors = require('cors');
+const expressModule = require('express');
+const corsModule = require('cors');
 const mongoose = require('mongoose');
+
+const express = expressModule.default || expressModule;
+const cors = corsModule.default || corsModule;
 const mongooseURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/checkthrive';
 
 const app = express();
