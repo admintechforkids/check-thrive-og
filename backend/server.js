@@ -1,6 +1,6 @@
-const expressModule = require('express');
-const corsModule = require('cors');
-const mongoose = require('mongoose');
+import express from 'express';
+import cors from 'cors';
+import mongoose from 'mongoose';
 
 const express = expressModule.default || expressModule;
 const cors = corsModule.default || corsModule;
